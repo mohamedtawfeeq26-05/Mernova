@@ -1,0 +1,15 @@
+{
+  "name": "mernova-bloodbridge",
+  "version": "1.0.0",
+  "description": "BloodBridge Full Stack Runner",
+  "scripts": {
+    "dev": "node run_all.js",
+    "start": "node run_all.js",
+    "server": "npm --prefix bloodbridge/server run dev",
+    "client": "npm --prefix bloodbridge/client run dev",
+    "flutter": "cd bloodbridge/flutter_client && flutter run",
+    "flutter:chrome": "cd bloodbridge/flutter_client && flutter run -d chrome",
+    "flutter:clean": "powershell -Command \"taskkill /F /IM dart.exe 2>$null; Remove-Item -Recurse -Force bloodbridge\\flutter_client\\build -ErrorAction SilentlyContinue; cd bloodbridge\\flutter_client; flutter clean\"",
+    "dev:flutter": "node run_with_flutter.js"
+  }
+}
